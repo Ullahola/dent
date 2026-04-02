@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Dent - Klinik Gigi Tanpa Rasa Takut</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        'ayodent-cta': '#FFEE50',
+                        'ayodent-purple': '#94199D',
+                        'ayodent-pink': '#E81973',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Ambient Glow Effect */
+        .bg-glow {
+            position: absolute;
+            background: linear-gradient(135deg, #94199D, #E81973);
+            filter: blur(100px);
+            opacity: 0.08;
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        /* Hide scrollbar for carousel but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased overflow-x-hidden text-center md:text-left">
+
+    <header class="w-full py-6 px-6 lg:px-8 max-w-7xl mx-auto flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+            <img src="LOGO.jpg" alt="Ayo Dent Logo" class="h-16 md:h-20 object-contain">
+        </a>
+    </header>
+
+    <section
+        class="relative pt-10 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <div class="bg-glow w-[350px] h-[350px] top-10 left-0 md:left-10"></div>
+        <div class="md:w-1/2 z-10 flex flex-col items-center md:items-start text-center md:text-left">
+            <h1 class="text-[32px] md:text-[46px] font-semibold leading-[1.2] mb-6 text-gray-900">
+                Banyak orang takut ke dokter gigi.<br class="hidden md:block"> Kami mengerti perasaan itu.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-xl">
+                Sejak 2022, kami telah membantu ribuan pasien menemukan keberanian dan percaya dirinya melalui
+                pendekatan
+                yang tepat dan personal.
+            </p>
+            <a href="https://wa.me/6282196523202?text=halo%20dok,%20saya%20ingin%20konsultasi%20terkait%20kondisi%20gigi%20saya"
+                target="_blank"
+                class="inline-block w-full md:w-auto text-center bg-ayodent-cta text-gray-900 font-bold text-lg py-4 px-8 rounded-full shadow-sm hover:shadow-md transition-all">
+                Ngobrol dulu dengan dokter
+            </a>
+        </div>
+        <div class="md:w-1/2 relative z-10 w-full mt-8 md:mt-0">
+            <img src="Komunikasi Pasien.jpg" alt="Dokter Ayo Dent"
+                class="rounded-[2rem] object-cover w-full h-[400px] md:h-[550px] shadow-lg border border-gray-50">
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 bg-white relative">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-[28px] md:text-[36px] font-bold mb-16 text-gray-900">Victory Smile Method™</h2>
+            <div class="relative border-l border-gray-200 ml-4 md:ml-6 space-y-12 text-left">
+                <div class="relative pl-10 md:pl-12 pt-1">
+                    <div
+                        class="absolute -left-5 md:-left-6 top-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center shadow-sm text-gray-700 font-bold">
+                        01</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Listen First</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Dokter mendengarkan kekhawatiran Anda tanpa
+                        menghakimi.</p>
+                </div>
+                <div class="relative pl-10 md:pl-12 pt-1">
+                    <div
+                        class="absolute -left-5 md:-left-6 top-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center shadow-sm text-gray-700 font-bold">
+                        02</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Explain Before Action</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Dokter menjelaskan setiap tindakan sebelum
+                        dilakukan.</p>
+                </div>
+                <div class="relative pl-10 md:pl-12 pt-1">
+                    <div
+                        class="absolute -left-5 md:-left-6 top-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center shadow-sm text-gray-700 font-bold">
+                        03</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Treatment Journey</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Anda mengetahui langkah perawatan dari awal hingga
+                        selesai.</p>
+                </div>
+                <div class="relative pl-10 md:pl-12 pt-1">
+                    <div
+                        class="absolute -left-5 md:-left-6 top-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center shadow-sm text-gray-700 font-bold">
+                        04</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Patient Control</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">Anda memiliki kendali penuh dan dapat menghentikan
+                        tindakan kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 bg-white relative overflow-hidden">
+        <div class="bg-glow w-[500px] h-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.05]">
+        </div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-[28px] md:text-[36px] font-bold text-gray-900 mb-4">Bukti Nyata Transformasi Senyum</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-12">Setiap pasien datang dengan keraguan, namun pulang dengan
+                senyum kemenangan.</p>
+
+            <div class="flex gap-6 overflow-x-auto pb-10 snap-x snap-mandatory no-scrollbar text-left">
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-1.jpg" alt="Transformasi 1" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Pemasangan Gigi Palsu</h4>
+                        <p class="text-sm text-gray-500 italic">"Kembali percaya diri tertawa lebar."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-2.jpg" alt="Transformasi 2" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Restorasi Estetik</h4>
+                        <p class="text-sm text-gray-500 italic">"Hasil sangat natural dan rapi."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-3.jpg" alt="Transformasi 3" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Pembersihan Noda</h4>
+                        <p class="text-sm text-gray-500 italic">"Proses lembut, gigi jauh lebih bersih."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-4.jpg" alt="Transformasi 4" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Perbaikan Gigi Patah</h4>
+                        <p class="text-sm text-gray-500 italic">"Senyum utuh kembali."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-5.jpg" alt="Transformasi 5" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Scaling & Polishing</h4>
+                        <p class="text-sm text-gray-500 italic">"Napas lebih segar, gusi sehat."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-6.jpg" alt="Transformasi 6" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Penambalan Komposit</h4>
+                        <p class="text-sm text-gray-500 italic">"Warna tambalan persis gigi asli."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-7.jpg" alt="Transformasi 7" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Whitening Treatment</h4>
+                        <p class="text-sm text-gray-500 italic">"Cerah seketika tanpa ngilu."</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[85%] md:min-w-[450px] snap-center bg-white rounded-[2.5rem] border border-gray-100 shadow-sm p-4">
+                    <img src="ba-8.jpg" alt="Transformasi 8" class="rounded-[2rem] w-full h-auto object-cover mb-4">
+                    <div class="px-2">
+                        <h4 class="font-bold text-gray-900">Full Arch Restoration</h4>
+                        <p class="text-sm text-gray-500 italic">"Transformasi total yang menakjubkan."</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-gray-400 text-xs mt-2 md:hidden italic">← Geser untuk lihat 8 hasil transformasi lainnya →
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 relative bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col items-center mb-16 text-center">
+            <h2 class="text-[28px] md:text-[36px] font-bold mb-4 text-gray-900">Cerita Kemenangan Mereka</h2>
+            <p class="text-gray-900 font-bold text-xl">5,0/5 Rating di Google (164 ulasan)</p>
+            <a href="https://www.google.com/search?q=Ayo+Dent+-+Klinik+Dokter+Gigi+Makassar#mpd=~337475010417148087/customers/reviews"
+                target="_blank"
+                class="text-ayodent-purple px-6 py-2 rounded-full font-bold text-sm bg-ayodent-purple/5 mt-4">Lihat
+                semua ulasan terbaru</a>
+        </div>
+
+        <div class="grid gap-10 md:grid-cols-2 max-w-5xl mx-auto mb-10 text-left">
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 flex flex-col justify-between">
+                <p class="text-gray-600 text-lg italic mb-8">"Awalnya saya sangat takut sampai gemetar... di Ayo Dent,
+                    dokter sangat sabar menjelaskan setiap alat. Saya merasa memegang kendali penuh, dan akhirnya bisa
+                    pulang dengan senyum bangga."</p>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100 text-left">
+                    <div
+                        class="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center font-bold text-gray-400">
+                        K</div>
+                    <div>
+                        <p class="font-bold">Karin</p>
+                        <p class="text-xs text-gray-400">Pasien Penambalan Gigi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 flex flex-col justify-between">
+                <p class="text-gray-600 text-lg italic mb-8">"Sudah lebih dari 5 tahun tidak periksa karena malu dan
+                    takut dihakimi. Ternyata di sini dokternya sangat suportif, tidak ada penghakiman sama sekali.
+                    Sekarang saya bisa tersenyum lebar dan lega."</p>
+                <div class="flex items-center gap-4 pt-4 border-t border-gray-100 text-left">
+                    <div
+                        class="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center font-bold text-gray-400">
+                        R</div>
+                    <div>
+                        <p class="font-bold">Raditya</p>
+                        <p class="text-xs text-gray-400">Pasien Pembersihan Karang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-2xl mx-auto flex flex-col items-center">
+            <a href="https://wa.me/6282196523202?text=halo%20dok,%20saya%20ingin%20konsultasi%20terkait%20kondisi%20gigi%20saya"
+                target="_blank"
+                class="block w-full md:w-auto min-w-[300px] bg-ayodent-cta text-gray-900 font-bold text-lg py-5 px-10 rounded-full shadow-lg hover:-translate-y-1 transition-all mb-4">
+                Ngobrol dulu dengan dokter
+            </a>
+            <p class="text-sm text-gray-500 font-medium italic italic">Boleh bertanya dulu. Tidak ada kewajiban
+                melakukan perawatan.</p>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 bg-white">
+        <div class="container mx-auto max-w-7xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Ruang Aman Anda di Ayo Dent</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <img src="ruang tunggu.jpg"
+                        class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold text-ayodent-purple">Area Tunggu Tenang</h4>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <img src="pasien konsul.jpg"
+                        class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold text-ayodent-purple">Percakapan Terbuka</h4>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <img src="ruang perawatan.jpg"
+                        class="w-full h-auto aspect-[4/3] object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold text-ayodent-purple">Kendali Penuh</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 bg-white text-center">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-[28px] md:text-[36px] font-bold text-gray-900 mb-12">Tips Sehat & Cerita dari Klinik</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                <div class="bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden shadow-sm text-left group">
+                    <div class="h-64 overflow-hidden"><img src="tips-sensitif.png"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"></div>
+                    <div class="p-8">
+                        <span
+                            class="text-[10px] font-bold text-ayodent-purple bg-ayodent-purple/10 px-3 py-1 rounded-full uppercase">Edukasi</span>
+                        <h4 class="text-xl font-bold text-gray-900 mt-4">Gigi Sensitif? Ini Do's & Don'ts Penting!</h4>
+                        <a href="https://share.google/fGvP1qZxYrP6d3zY3" target="_blank"
+                            class="text-ayodent-purple font-bold text-sm mt-4 inline-block">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden shadow-sm text-left group">
+                    <div class="h-64 overflow-hidden bg-black"><video class="w-full h-full object-cover" autoplay loop
+                            muted playsinline>
+                            <source src="hasil-tambal.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="p-8">
+                        <span
+                            class="text-[10px] font-bold text-ayodent-pink bg-ayodent-pink/10 px-3 py-1 rounded-full uppercase">Hasil
+                            Perawatan</span>
+                        <h4 class="text-xl font-bold text-gray-900 mt-4">Solusi Gigi Patah: Kembali Percaya Diri</h4>
+                        <a href="https://share.google/zu3o862YGTJOf8VZB" target="_blank"
+                            class="text-ayodent-purple font-bold text-sm mt-4 inline-block">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.google.com/search?q=Ayo+Dent+-+Klinik+Dokter+Gigi+Makassar#lpstate=pid:833912387244634743"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-bold text-gray-400 hover:text-ayodent-purple transition-all italic text-sm">Lihat
+                semua postingan di Google ↗</a>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 bg-white border-t border-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-[28px] md:text-[36px] font-bold text-center mb-16 text-gray-900">Perasaan Anda Valid</h2>
+            <div class="faq-container space-y-4">
+                <div class="faq-item border border-gray-100 rounded-[2rem] overflow-hidden">
+                    <button
+                        class="w-full text-left p-6 font-bold flex justify-between items-center bg-white hover:bg-gray-50 transition-all">
+                        <span>Apakah perawatannya akan terasa sakit?</span>
+                        <span class="faq-icon transition-transform">↓</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-gray-600 leading-relaxed text-left">Kami menggunakan
+                        teknik paling lembut. Jika Anda merasa tidak nyaman sedikit saja, kami akan langsung berhenti.
+                        Anda memegang kendali penuh.</div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-[2rem] overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center bg-white">
+                        <span>Kondisi gigi saya sudah parah dan malu. Apakah dihakimi?</span>
+                        <span class="faq-icon transition-transform">↓</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-gray-600 leading-relaxed text-left">Sama sekali tidak.
+                        Tidak ada penghakiman di ruang perawatan kami. Tujuan kami adalah merangkul dan membantu
+                        kesehatan gigi Anda.</div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-[2rem] overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center bg-white">
+                        <span>Boleh hanya berkonsultasi tanpa tindakan?</span>
+                        <span class="faq-icon transition-transform">↓</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-gray-600 leading-relaxed text-left">Tentu boleh.
+                        Langkah pertama terkadang hanya sebuah percakapan sederhana. Tidak ada kewajiban langsung
+                        melakukan perawatan.</div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-[2rem] overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center bg-white">
+                        <span>Bagaimana jika saya takut melihat alat dokter?</span>
+                        <span class="faq-icon transition-transform">↓</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-gray-600 leading-relaxed text-left">Dokter kami akan
+                        menjelaskan setiap alat dan fungsinya sebelum tindakan dimulai. Tidak akan ada kejutan yang
+                        memicu kepanikan.</div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-[2rem] overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center bg-white">
+                        <span>Boleh meminta berhenti di tengah perawatan?</span>
+                        <span class="faq-icon transition-transform">↓</span>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-gray-600 leading-relaxed text-left">Sangat boleh. Anda
+                        memiliki otoritas penuh. Cukup beri isyarat, dan dokter kami akan berhenti seketika tanpa
+                        paksaan.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 lg:px-8 max-w-7xl mx-auto bg-white">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2 text-left">
+                <h2 class="text-[28px] md:text-[36px] font-bold text-gray-900 mb-6">Kunjungi Klinik Kami</h2>
+                <p class="text-lg text-gray-600 mb-8">Ayo Dent terletak di lokasi yang tenang di Makassar. Ruang
+                    perawatan kami didesain agar Anda merasa seperti di rumah sendiri.</p>
+                <div class="space-y-6 mb-8 text-left">
+                    <div class="flex items-start gap-4">📍 <p class="font-bold text-gray-900">Ayo Dent - Klinik Dokter
+                            Gigi Makassar</p>
+                    </div>
+                </div>
+                <a href="https://share.google/3JwsvaSOn3kwSq9x8" target="_blank"
+                    class="inline-flex items-center gap-2 bg-white border border-gray-200 px-6 py-3 rounded-full text-sm font-bold hover:bg-gray-50 shadow-sm transition-all">🗺️
+                    Buka di Google Maps</a>
+            </div>
+            <div class="md:w-1/2 w-full h-[400px] rounded-[3rem] overflow-hidden shadow-xl border border-gray-50">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.80582068695!2d119.4443729!3d-5.1381373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefd7065977a45%3A0x4aeb2725e27a697!2sAyo%20Dent%20-%20Klinik%20Dokter%20Gigi%20Makassar!5e0!3m2!1sid!2sid!4v1711920000000!5m2!1sid!2sid"
+                    class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-24 px-6 lg:px-8 text-center relative bg-white">
+        <div class="bg-glow w-[300px] h-[300px] bottom-0 left-1/2 transform -translate-x-1/2 opacity-10"></div>
+        <div class="max-w-2xl mx-auto flex flex-col items-center">
+            <p class="text-xl md:text-2xl text-gray-900 leading-relaxed mb-12 font-medium">Takut ke dokter gigi itu
+                manusiawi. Langkah pertama hanya sebuah percakapan sederhana.</p>
+            <a href="https://wa.me/6282196523202?text=halo%20dok,%20saya%20ingin%20konsultasi%20terkait%20kondisi%20gigi%20saya"
+                target="_blank"
+                class="block w-full md:w-auto min-w-[300px] text-center bg-ayodent-cta text-gray-900 font-bold text-lg py-5 px-10 rounded-full shadow-lg hover:-translate-y-1 transition-all mb-4">
+                Ngobrol dulu dengan dokter
+            </a>
+            <p class="text-sm text-gray-400 font-medium italic">Boleh bertanya dulu. Tidak ada kewajiban melakukan
+                perawatan.</p>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 text-center bg-white">
+        <img src="LOGO.jpg" class="h-12 mx-auto mb-4 opacity-70">
+        <p class="text-xs text-gray-400 italic">© 2026 Ayo Dent. Tempat aman untuk senyum Anda.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('button');
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('.faq-icon');
+                btn.addEventListener('click', () => {
+                    const isOpen = !content.classList.contains('hidden');
+                    faqItems.forEach(o => {
+                        o.querySelector('.faq-content').classList.add('hidden');
+                        o.querySelector('.faq-icon').classList.remove('rotate-180');
+                    });
+                    if (!isOpen) {
+                        content.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
